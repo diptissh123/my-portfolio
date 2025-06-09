@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  min-height: 100vh;
+ 
+}
+body {
+  font-family: 'Oleo Script', cursive;
+}
+
+*{
+   background-color: black;
+   color:#fff;
+}
+#about{
+  padding-left: 30%;
+  color: #ababab;
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.text-content {
+  max-width: 500px;
+  font-size: 24px;
+  margin-left: 70px;
+}
+
+
+.image-content img {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 90%;
+ 
+}
+#projects{
+  padding: 50px 0;
+}
+.worklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.work a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff004f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.work a:hover {
+  background-color: #e60045;
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 239, 239, 0.6),#ff004f);
+  
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40%;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img{
+  transform: scale(1.1);
+
+}
+.work:hover .layer{
+  height: 100%;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+  background-color: transparent !important; /* Just to be sure */
+}
+
+
+
+
+
+.btn:hover{
+ 
+  transition: all 0.3s ease;
+  background: transparent !important; /* Just to be sure */
+}
+
+
+
+.bc {
+  background-color: transparent;
+  background-color: transparent !important; /* Just to be sure */
+}
+
+.layer h3,
+.layer p {
+  background: transparent !important; /* Remove black box */
+}
+
+
+form,
+form {
+ 
+  border-color: #ff004f;
+  font-family: 'Poppins', sans-serif;
+}
+
+form input,
+form textarea {
+  background-color: #fff !important;
+  border: 1px solid #ff004f !important;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+form label {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+form .btn {
+  background-color: #ff004f;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #e60046;
+  color: #fff;
+}
+
+.border{
+  border: 2px solid #ff004f !important;
+  border-radius: 10px;
+  display: flex;
+}
+.iconlist{
+  margin-top: 50px;
+}
+.icon{
+  margin: 20px;
+  transition: all 0.3s ease;
+}
+.icon:hover{
+  transform: translate(100vh);
+  box-shadow: 0 0 25px rgba(255, 0, 79, 0.5);
+}
+
+
+/* for services */
+.section-title {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  font-family: 'Oleo Script', cursive;
+  color: #ff004f;
+}
+
+.section-subtitle {
+  color: #fff !important;
+}
+
+/* Card Styling */
+.card-custom {
+  background-color: #000; /* Ensure dark background */
+  border: 1px solid rgba(255, 0, 79, 0.5); /* Optional border for edge clarity */
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(255, 0, 79, 0.5);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Card on Hover */
+.card-custom:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(11, 159, 245, 0.925);
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.5);
+}
+
+/* Card Body */
+.card-body-custom {
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* Icon Styling */
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff004f;
+  text-align: center;
+  display: block; /* needed if it's an inline element like <i> or <svg> */
+ 
+}
+
+/* Title */
+.card-title {
+  color: #ff004f;
+  font-weight: bold;
+}
+
+/* Description Text */
+.card-text {
+  color: #fff;
+  font-size: 0.95rem;
+}
