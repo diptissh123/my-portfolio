@@ -18,7 +18,7 @@ import HomePage from './Components/HomePage';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
      <Navbar/>
       <Routes>
        <Route path='/' element={<HomePage/>}></Route>
@@ -28,7 +28,7 @@ function App() {
        <Route path='/Contacts' element={<Contacts/>}></Route>
        
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
